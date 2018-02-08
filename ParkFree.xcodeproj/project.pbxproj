@@ -12,6 +12,10 @@
 		F7DF78FB201A40DB009D6BF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DF78F9201A40DB009D6BF0 /* Main.storyboard */; };
 		F7DF78FD201A40DB009D6BF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DF78FC201A40DB009D6BF0 /* Assets.xcassets */; };
 		F7DF7900201A40DB009D6BF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DF78FE201A40DB009D6BF0 /* LaunchScreen.storyboard */; };
+		F7DF790B201A5189009D6BF0 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF790A201A5189009D6BF0 /* RoundButton.swift */; };
+		F7DF790D201A5691009D6BF0 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF790C201A5691009D6BF0 /* ImageView.swift */; };
+		F7DF790F201A58C9009D6BF0 /* ParkingSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF790E201A58C9009D6BF0 /* ParkingSpot.swift */; };
+		F7DF7912201AB425009D6BF0 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DF7911201AB425009D6BF0 /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		F7DF78FC201A40DB009D6BF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7DF78FF201A40DB009D6BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7DF7901201A40DB009D6BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7DF790A201A5189009D6BF0 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		F7DF790C201A5691009D6BF0 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		F7DF790E201A58C9009D6BF0 /* ParkingSpot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpot.swift; sourceTree = "<group>"; };
+		F7DF7911201AB425009D6BF0 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 		F7DF78F4201A40DB009D6BF0 /* ParkFree */ = {
 			isa = PBXGroup;
 			children = (
+				F7DF7910201AB3F9009D6BF0 /* Services */,
+				F7DF7908201A50FA009D6BF0 /* View */,
+				F7DF7907201A50E2009D6BF0 /* Model */,
+				F7DF7909201A50FF009D6BF0 /* Controller */,
 				F7DF78F5201A40DB009D6BF0 /* AppDelegate.swift */,
 				F7DF78F7201A40DB009D6BF0 /* ViewController.swift */,
 				F7DF78F9201A40DB009D6BF0 /* Main.storyboard */,
@@ -62,6 +74,38 @@
 				F7DF7901201A40DB009D6BF0 /* Info.plist */,
 			);
 			path = ParkFree;
+			sourceTree = "<group>";
+		};
+		F7DF7907201A50E2009D6BF0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7DF790E201A58C9009D6BF0 /* ParkingSpot.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7DF7908201A50FA009D6BF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7DF790A201A5189009D6BF0 /* RoundButton.swift */,
+				F7DF790C201A5691009D6BF0 /* ImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7DF7909201A50FF009D6BF0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7DF7910201AB3F9009D6BF0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F7DF7911201AB425009D6BF0 /* LocationService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7DF790D201A5691009D6BF0 /* ImageView.swift in Sources */,
+				F7DF790B201A5189009D6BF0 /* RoundButton.swift in Sources */,
 				F7DF78F8201A40DB009D6BF0 /* ViewController.swift in Sources */,
+				F7DF790F201A58C9009D6BF0 /* ParkingSpot.swift in Sources */,
+				F7DF7912201AB425009D6BF0 /* LocationService.swift in Sources */,
 				F7DF78F6201A40DB009D6BF0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,10 +323,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EMV9BKLS5A;
+				DEVELOPMENT_TEAM = PHHGHM5K66;
 				INFOPLIST_FILE = ParkFree/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.camps.ParkFree;
+				PRODUCT_BUNDLE_IDENTIFIER = com.parkfree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -290,10 +339,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EMV9BKLS5A;
+				DEVELOPMENT_TEAM = PHHGHM5K66;
 				INFOPLIST_FILE = ParkFree/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.camps.ParkFree;
+				PRODUCT_BUNDLE_IDENTIFIER = com.parkfree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
